@@ -1,0 +1,509 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap'); */
+
+@font-face {
+    font-family: 'DressmannSansBold';
+    src: url('../assets/DressmannSans-Bold.woff2') format('woff2');
+  }
+@font-face {
+    font-family: 'DressmannSansMedium';
+    src: url('../assets/DressmannSans-Medium.woff2') format('woff2');
+  }
+@font-face {
+    font-family: 'DressmannSansRegular';
+    src: url('../assets/DressmannSans-Regular.woff2') format('woff2');
+  }
+@font-face {
+    font-family: 'DressmannSlabBold';
+    src: url('../assets/DressmannSlab-Bold.woff2') format('woff2'),
+        url('../assets/DressmannSlab-Bold.woff') format('woff');
+  }
+
+:root {
+    --color-main: #000000;
+    --color-secondary: #000000;
+    --color-text: #666;
+    --color-background: #fff;
+
+    /* --weight-bold: 500; */
+
+    --padding-base: 2rem;
+}
+html {
+    font-family: 'DressmannSansMedium', sans-serif;
+    /* font-weight: 300; */
+    font-weight: normal;
+}
+
+.heading {
+    font-size: 2.5rem;
+}
+.lead {
+    width: 40rem;
+    max-width: 100%;
+}
+.subheading {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.title {
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: 'DressmannSansRegular', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    /* font-weight: 500; */
+    line-height: 1.5125rem; /* 151.25% */
+    font-weight: normal;
+}
+
+.my-custom-slider {
+    margin-top: 4rem;
+}
+.my-custom-slider .title {
+    margin: 1rem 0 .5rem;
+}
+.section-2 {
+    background-image: url(../assets/img-1.jpg);
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    width: 100%;
+    height: 32rem;
+}
+.section-3 h2 {
+    font-family: 'DressmannSlabBold', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 3.5rem;
+    line-height: normal;
+    margin: 0;
+    font-weight: normal;
+    
+}
+.section-3 {
+    width: 28rem;
+    height: 16rem;
+    padding-top: 7rem;
+    margin-left: 4.5rem;
+}
+.section-3 p {
+    font-family: 'DressmannSansRegular', sans-serif;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.23444rem;
+    line-height: 1.5125rem; /* 122.527% */
+    width: 86%;
+    margin: 0 auto;
+}
+.section-4 {
+    margin: 1rem;
+}
+.button-1 {
+    display: flex;
+    padding: 0.75rem 2.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    /* background: rgb(204, 10, 23); */
+    background-color: rgba(204, 10, 23, 1); 
+    color: #FFF;
+
+    text-align: center;
+    font-family: 'DressmannSansMedium', sans-serif;
+    font-size: 1.23444rem;
+    font-style: normal;
+    /* font-weight: 500; */
+    line-height: 1.5125rem; /* 122.527% */
+    /* margin: 0 auto;  */
+    /* opacity: 0.7; */
+    transition: all 0.2 ease-in-out;
+}
+.button-1:hover {
+    background-color: rgba(204, 10, 23, 0.7); 
+}
+.section-5 {
+    margin-top: 1.25rem;
+}
+.gallery-price {
+    display: flex;
+    gap: 0.5rem;
+}
+.price-red {
+    color: #CE0A17;
+    font-family: 'DressmannSansMedium', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    /* font-weight: 700; */
+    line-height: 1.5125rem; /* 151.25% */
+}
+.price-grey {
+    color: #7C7C7C;
+    font-family: 'DressmannSansMedium', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    /* font-weight: 700; */
+    line-height: 1.5125rem; /* 151.25% */
+    text-decoration: line-through;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+    .header .cta {
+        margin-top: 1rem;
+    }
+    .section-2 {
+        background-image: none;
+        /* background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; */
+        width: 100%;
+        height: 18rem;
+    }
+    .section-3 h2 {
+        font-family: 'DressmannSlabBold', sans-serif;
+        color: #000;
+        text-align: left;
+        font-size: 2.5rem;
+        line-height: normal;
+        /* margin: 1rem; */
+        font-weight: normal;
+    }
+    .section-3 {
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+        margin-left: 0;
+    }
+    .section-3 p {
+        font-family: 'DressmannSansRegular', sans-serif;
+        color: #000;
+        text-align: left;
+        font-size: 1.23444rem;
+        line-height: 1.5125rem; /* 122.527% */
+        width: 100%;
+        margin: 0;
+    }
+    .section-4 {
+        margin: 0 1rem;
+    }
+    .button-1 {
+        display: flex;
+        padding: 0.75rem 2.5rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        /* background: rgb(204, 10, 23); */
+        background-color: rgba(204, 10, 23, 1); 
+        color: #FFF;
+    
+        text-align: center;
+        font-family: 'DressmannSansMedium', sans-serif;
+        font-size: 1.23444rem;
+        font-style: normal;
+        /* font-weight: 500; */
+        line-height: 1.5125rem; /* 122.527% */
+        /* margin: 0 auto;  */
+        /* opacity: 0.7; */
+        transition: all 0.2 ease-in-out;
+    }
+    .button-1:hover {
+        background-color: rgba(204, 10, 23, 0.7); 
+    }
+    .section-5 {
+        margin-top: 1.25rem;
+    }
+    .section-6 {
+        width: 100%;
+        height: 15rem;
+        background-image: url(../assets/img-1.jpg);
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+    .section-7 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .section-10 {
+        margin: 1rem;
+
+    }
+    .section-10 h2 {
+        font-family: 'DressmannSlabBold', sans-serif;
+        color: #000;
+        text-align: left;
+        font-size: 2.5rem;
+        line-height: normal;
+        font-weight: normal;
+    }
+    .section-10 p {
+        font-family: 'DressmannSansRegular', sans-serif;
+        color: #000;
+        text-align: left;
+        font-size: 1.23444rem;
+        line-height: 1.5125rem;
+        width: 100%;
+        margin: 0;
+    }
+    .button-2 {
+        display: flex;
+        padding: 0.75rem 2.5rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        /* background: rgb(204, 10, 23); */
+        background-color: rgba(204, 10, 23, 1); 
+        color: #FFF;
+        text-align: center;
+        font-family: 'DressmannSansMedium', sans-serif;
+        font-size: 1.23444rem;
+        font-style: normal;
+        /* font-weight: 500; */
+        line-height: 1.5125rem; /* 122.527% */
+        /* margin: 0 auto;  */
+        /* opacity: 0.7; */
+        transition: all 0.2 ease-in-out;
+        margin-left: 1rem;
+        margin-bottom: 2.7rem;
+    }
+    .section-8 {
+        margin-bottom: -1.6rem;
+    }
+
+    .sticky-2 {
+        display: none;
+    }
+
+    .sticky-3 {
+        display: none;
+    }
+
+    .sticky-cta {
+        justify-content: center;
+    }
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    .gallery-price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    
+}
+
+@media (min-width: 481px) {
+    .heading {
+        font-size: 3rem;
+    }
+    .button-1 {
+        margin: 0 auto; 
+    }
+    .section-6 {
+        display: none;
+    }
+    .section-7 {
+        display: flex;
+        margin: 0 1rem;
+    }
+    .section-8 {
+        width: 50%;
+    }
+    .section-9 {
+        width: 50%;
+        margin-left: 2.5rem;
+    }
+    .section-10 h2 {
+        margin: 0;
+        margin-top: 2rem;
+        color: #000;
+        font-family: 'DressmannSlabBold', sans-serif;
+        font-size: 3.52369rem;
+        line-height: 4rem; /* 113.517% */
+        margin-bottom: 1.7rem;
+    }
+    .section-10 p {
+        color: #000;
+        font-family: 'DressmannSansRegular', sans-serif;
+        font-size: 1.23444rem;
+        font-style: normal;
+        /* font-weight: 500; */
+        line-height: 1.5125rem; /* 122.527% */
+        margin-bottom: 1.8rem;
+    }
+    .button-2 {
+        display: flex;
+        padding: 0.75rem 2.5rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        /* background: rgb(204, 10, 23); */
+        background-color: rgba(204, 10, 23, 1); 
+        color: #FFF;
+    
+        text-align: center;
+        font-family: 'DressmannSansMedium', sans-serif;
+        font-size: 1.23444rem;
+        font-style: normal;
+        /* font-weight: 500; */
+        line-height: 1.5125rem; /* 122.527% */
+        /* margin: 0 auto;  */
+        /* opacity: 0.7; */
+        transition: all 0.2 ease-in-out;
+    }
+    /* .button-2:hover {
+        background-color: rgba(204, 10, 23, 0.7); 
+    } */
+
+}
+
+.button-3 {
+    display: flex;
+    padding: 0.75rem 2.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    /* background: rgb(204, 10, 23); */
+    background: #FFF;
+    color: #CE0A17;
+
+    text-align: center;
+    font-family: 'DressmannSansMedium', sans-serif;
+    font-size: 1.23444rem;
+    font-style: normal;
+    /* font-weight: 500; */
+    line-height: 1.5125rem; /* 122.527% */
+    /* margin: 0 auto;  */
+    /* opacity: 0.7; */
+    transition: all 0.2 ease-in-out;
+
+}
+/* .button-3:hover {
+    background-color: rgba(204, 10, 23, 0.7); 
+} */
+
+.sticky-1 {
+    width: 11.56rem;
+    height: 1.5rem;
+}
+
+.image-1 {
+    background-image: url(../assets/g/a.jpg);
+    /* width: 16.0625rem; */
+    width: 100%;
+    height: 15.9375rem;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.image-2 {
+    background-image: url(../assets/g/b.jpg);
+    /* width: 16.0625rem; */
+    width: 100%;
+    height: 15.9375rem;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.image-3 {
+    background-image: url(../assets/g/c.jpg);
+    /* width: 16.0625rem; */
+    width: 100%;
+    height: 15.9375rem;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.image-4 {
+    background-image: url(../assets/g/d.jpg);
+    /* width: 16.0625rem; */
+    width: 100%;
+    height: 15.9375rem;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.image-5 {
+    background-image: url(../assets/g/e.jpg);
+    /* width: 16.0625rem; */
+    width: 100%;
+    height: 15.9375rem;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.image-6 {
+    background-image: url(../assets/g/f.jpg);
+    /* width: 16.0625rem; */
+    width: 100%;
+    height: 15.9375rem;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.image-box {
+    background: #CE0A17;
+    display: inline-flex;
+    padding: 0.0625rem 0.625rem 0rem 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    color: #FFF;
+    text-align: center;
+    font-family: 'DressmannSansMedium', sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    /* font-weight: 500; */
+    line-height: 1.5125rem; /* 201.667% */
+    margin-top: 0.5rem;
+}
+a {
+    text-decoration: none;
+}
+
+video {
+    cursor: pointer;
+}
